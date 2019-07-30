@@ -1,0 +1,106 @@
+baseurl = "https://morteza-karimi.ir"
+title = "Morteza Karimi"
+
+theme = "coder"
+
+languagecode = "en"
+DefaultContentLanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+enableEmoji = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTXT =true
+# googleAnalytics="UA-126623210-1"
+disableHugoGeneratorInject = true
+[outputFormats]
+    [outputFormats.html]
+        minify = true
+
+[outputs]
+  home = ["HTML", "AMP", "RSS"]
+[params]
+    author = "Morteza Karimi"
+    description = "Morteza Karimi's personal website, You can contact with Morteza Karimi with social networks link in this page or see Morteza Karimi resume in about page"
+    keywords = "website,developer,personal,PHP, Morteza Karimi,Social Networks,Resume,مرتضی کریمی"
+    info = "Backend web Developer and Master student of Artificial Intelligence"
+    avatarurl = "http://www.gravatar.com/avatar/c7a79167b6d736630e3a64e206e22a5a?d=mp&s=266"
+    images=["http://www.gravatar.com/avatar/c7a79167b6d736630e3a64e206e22a5a?d=mp&s=266"]
+    footercontent = ""
+    dateformat = "January 2, 2006"
+
+    hideCredits = true
+    hideCopyright = true
+    locale = "en"
+    rtl = false
+
+    # Custom CSS
+    custom_css = []
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-fw"
+    weight = 1
+    url = "https://github.com/mortezakarimi/"
+[[params.social]]
+    name = "Gitlab"
+    icon = "fab fa-gitlab fa-fw"
+    weight = 2
+    url = "https://gitlab.com/mortezakarimi/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-fw"
+    weight = 3
+    url = "https://twitter.com/mortezak1373/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-fw"
+    weight = 4
+    url = "https://www.linkedin.com/in/mortezakarimi/"
+[[params.social]]
+    name = "Medium"
+    icon = "fab fa-medium fa-fw"
+    weight = 5
+    url = "https://medium.com/@mortezak1373"
+#[[params.social]]
+#    name = "Google Plus"
+#    icon = "fab fa-google-plus fa-fw"
+#    weight = 5
+#    url = "https://plus.google.com/u/0/+MortezaKarimiIr"
+[[params.social]]
+    name = "Telegram"
+    icon = "fab fa-telegram fa-fw"
+    weight = 6
+    url = "https://t.me/mortezak1373"
+
+[[menu.main]]
+    name = "About Morteza"
+    weight = 1.0
+    url = "/about/"
+
+[languages]
+    [languages.en]
+        languagecode = "en"
+        languagename = "English" # The language name to be displayed in the selector.
+
+    [languages.fa]
+        languagecode = "fa"
+        languagename = "پارسی"
+        title = "مرتضی کریمی"
+
+        [languages.fa.params]
+            author = "مرتضی کریمی"
+            description = "سایت شخصی مرتضی کریمی، در این سایت شما می‌توانید رزومه مرتضی کریمی را مشاهده نمایید و یا با استفاده از پیوند‌های شبکه اجتماعی با مرتضی کریمی در ارتباط باشید."
+            keywords = "سایت,شخصی، شبکه اجتماعی, رزومه,مرتضی کریمی,توسعه دهنده وب,پی اچ پی,PHP,Morteza Karimi"
+            info = "برنامه نویس وب و دانشجوی ارشد هوش مصنوعی"
+            rtl= true
+            locale = "fa"
+        [languages.fa.menu]
+            [[languages.fa.menu.main]]
+                 name = "درباره مرتضی"
+                 weight = 1.0
+                 url = "/about/"

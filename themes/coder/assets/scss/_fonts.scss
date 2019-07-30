@@ -1,0 +1,14 @@
+/*fonts*/
+
+@include font-face('IRANSans', '../fonts/IRANSansWeb_Black', 900, 'normal');
+
+@include font-face('IRANSans', '../fonts/IRANSansWeb_Bold', 'bold',
+  'normal');
+@include font-face('IRANSans', '../fonts/IRANSansWeb_Medium', 500,
+  'normal');
+@include font-face('IRANSans', '../fonts/IRANSansWeb_Light', 300,
+  'normal');
+@include font-face('IRANSans', '../fonts/IRANSansWeb_UltraLight', 200,
+  'normal');
+@include font-face('IRANSans', '../fonts/IRANSansWeb', 'normal',
+  'normal');

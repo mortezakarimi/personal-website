@@ -1,0 +1,24 @@
+<section class="container centered">
+  <div class="about">
+    {{ with .Site.Params.avatarurl }}
+    <div class="avatar"><img src="{{ . }}" alt="avatar"></div>
+    {{ end }}
+    <h1>{{ .Site.Params.author }}</h1>
+    <h2>{{ .Site.Params.info }}</h2>
+    <span itemscope itemtype="http://schema.org/Person">
+      {{ with .Site.Params.author }}<meta itemprop="name" content="{{ . }}">{{ end }}
+      <link itemprop="url" href="{{ .Permalink }}">
+      {{ with .Site.Params.social }}
+      <ul>
+        {{ range sort .}}
+          {{ if .icon }}
+            <li><a itemprop="sameAs" href="{{ .url }}" title="{{ .name }}"><i class="{{ .icon }}"></i></a></li>
+          {{ else }}
+            <li><a itemprop="sameAs" href="{{ .url }}" title="{{ .name }}">{{ .name }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+      {{ end }}
+    </span>
+  </div>
+</section>
